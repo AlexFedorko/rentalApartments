@@ -1,1 +1,1 @@
-console.log("Start");
+window.addEventListener("scroll",(()=>{const e=document.querySelector(".header");window.scrollY>50?e.classList.add("header-scrolled"):e.classList.remove("header-scrolled")}));

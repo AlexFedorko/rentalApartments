@@ -76,11 +76,8 @@
   align-items: flex-start;
   gap: 10px;
   color: #FFF;
-  font-family: Gelasio;
-  font-size: 14px;
-  font-style: normal;
-  font-weight: 500;
-  line-height: 150%; /* 21px */
+  font: 500 14rem Gelasio, sans-serif;
+  line-height: 1.5; /* 21px */
   margin-left: 25rem;
   //margin-bottom: 23rem;
 }

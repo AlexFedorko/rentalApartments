@@ -59,3 +59,14 @@ li {
   transition: .7s;
 }
 
+.header-scrolled {
+  background: rgba(255, 255, 255, 0.9); /* Adjust the alpha value for the desired blur effect */
+  backdrop-filter: blur(10rem); /* Adjust the blur radius as needed */
+  transition: background 0.5s;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+  padding-top: 20rem;
+}
+

@@ -22,7 +22,7 @@
   height: 268px;
   flex-shrink: 0;
   z-index: 3;
-  transform: translate(57rem, -57rem);
+  transform: translate(57rem, -70rem);
 }
 
 .about-player-block {
@@ -35,6 +35,7 @@
 }
 
 .about-player-main {
+  display: flex;
   position: absolute;
   z-index: 5;
   width: 630px;
@@ -42,6 +43,10 @@
   flex-shrink: 0;
 }
 
+.player-btn {
+  position: absolute;
+  z-index: 6;
+}
 
 .about-title {
   padding-top: 240rem;
@@ -65,6 +70,8 @@
   font: 500 33rem Gelasio, sans-serif;
   line-height: 1.25; /* 44.8px */
 }
+
+
 
 
 
