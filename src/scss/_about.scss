@@ -1,20 +1,50 @@
 @import 'variables';
 
 .about {
+  width: 100%;
   min-height: 662rem;
 }
 .about-player {
-  width: 765px;
+  width: 100%;
+  max-width: 765px;
   height: 459rem;
   display: inline-flex;
   padding: 84px 21px 0 66px;
   justify-content: flex-end;
   align-items: center;
+  margin-top: 109rem;
+  transform: translateX(-150rem);
 }
+
+.about-player-background {
+  position: relative;
+  width: 484px;
+  height: 268px;
+  flex-shrink: 0;
+  z-index: 3;
+  transform: translate(57rem, -57rem);
+}
+
+.about-player-block {
+  position: absolute;
+  z-index: 4;
+  width: 228px;
+  height: 228px;
+  flex-shrink: 0;
+  transform: translate(-420rem, 100rem);
+}
+
+.about-player-main {
+  position: absolute;
+  z-index: 5;
+  width: 630px;
+  height: 325px;
+  flex-shrink: 0;
+}
+
 
 .about-title {
   padding-top: 240rem;
-  padding-left: 45rem;
 }
 
 .about-title h4 {
