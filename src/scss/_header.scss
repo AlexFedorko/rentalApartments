@@ -55,8 +55,8 @@ li {
 }
 
 .btn:hover {
-  color: $text-color-1;
   transition: .7s;
+  filter: brightness(115%);
 }
 
 .header-scrolled {

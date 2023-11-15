@@ -46,6 +46,13 @@
 .player-btn {
   position: absolute;
   z-index: 6;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%,-50%);
+}
+
+#openModalLink {
+  cursor: pointer;
 }
 
 .about-title {

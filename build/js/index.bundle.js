@@ -1,1 +1,1 @@
-window.addEventListener("scroll",(()=>{const e=document.querySelector(".header");window.scrollY>50?e.classList.add("header-scrolled"):e.classList.remove("header-scrolled")}));
+!function(){const e=document,d=d=>e.querySelector(d),o=d(".header");window.addEventListener("scroll",(()=>{const e=scrollY>50?"add":"remove";o.classList[e]("header-scrolled")})),d("#openModalLinkVideo").addEventListener("click",(()=>{}))}();

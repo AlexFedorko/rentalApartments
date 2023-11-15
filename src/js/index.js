@@ -1,11 +1,16 @@
+const d = document;
+const $ = selector => d.querySelector(selector);
+
+const header = $('.header');
 
 window.addEventListener('scroll', () => {
-    const header = document.querySelector('.header');
-    const scrolled = window.scrollY;
-    if (scrolled > 50) {
-        header.classList.add('header-scrolled');
-    } else {
-        header.classList.remove('header-scrolled');
-    }
+    const action = scrollY > 50 ? 'add' : 'remove';
+    header.classList[action]('header-scrolled');
 });
 
+
+const modalBtn = $('#openModalLinkVideo');
+
+modalBtn.addEventListener('click', () => {
+
+})
