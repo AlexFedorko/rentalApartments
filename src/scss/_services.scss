@@ -35,14 +35,15 @@
 
 .services-items {
   display: flex;
-  max-width: 100%;
+  flex-row: 1;
+  width: 100%;
   gap: 30rem;
   margin: 0;
   padding-bottom: 47rem;
 }
 
 .services-item {
-  width: 262rem;
+  width: 100%;
   max-height: 258rem;
   display: flex;
   flex-direction: column;

@@ -3,7 +3,6 @@
 
 .gallery-main {
   width: 100%;
-  max-width: 1140rem;
   margin: 0 auto;
   display: flex;
   flex-wrap: wrap;
@@ -16,9 +15,8 @@
 .gallery-item {
   position: relative;
 
+
   & .gallery-item-img {
-    width: 555rem;
-    height: 337rem;
   }
 
   & .gallery-item-content {

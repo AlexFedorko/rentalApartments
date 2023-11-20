@@ -4,13 +4,15 @@
     <meta charset="UTF-8"/>
     <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <link href="https://fonts.googleapis.com/css2?family=Gelasio:wght@400;500;700&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Gelasio:wght@400;500;700&family=Roboto:wght@300;400;500;700&display=swap"
+          rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap" rel="stylesheet">
     <title>Rayal Park</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"/>
     <link rel="stylesheet" href="css/main.css"/>
 </head>
 <body>
-    <header class="header">
+<header class="header">
    <div class="container flex-between">
       <div class="nav-logo flex">
       <img class="nav-logo-icon" src="img/group 279.png" alt="menu-logo">
@@ -28,7 +30,7 @@
    </div>
 </header>
 
-    <section id='main-subscection' class="main-subsection">
+<section id='main-subscection' class="main-subsection">
     <div class="container">
     <div class="main-title">
         <h4>serenity</h4>
@@ -38,7 +40,7 @@
     </div>
     </div>
 </section>
-    <section id='about' class="about">
+<section id='about' class="about">
     <div class="container flex">
         <div class="about-info">
         <div class="about-player">
@@ -63,7 +65,7 @@
         </div>
     </div>
 </section>
-    <section id='services' class="services">
+<section id='services' class="services">
     <div class="container">
         <div class="services-title">
             <h2>Why you choose us!</h2>
@@ -95,7 +97,7 @@
         </div>
     </div>
 </section>
-    <section id='gallery' class='gallery'>
+<section id='gallery' class='gallery'>
     <div class="container">
         <div class="gallery-main">
             <div class="gallery-title">
@@ -157,7 +159,42 @@
         </div>
     </div>
 </section>
-    <section id='subscribe' class="subscribe">
+<section id="photos">
+    <div class="container">
+        <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <img src="/img/ReviewPhoto/review1.JPEG" alt="">
+                </div>
+                <div class="swiper-slide">
+                    <img src="/img/ReviewPhoto/review2.JPEG" alt="">
+                </div>
+                <div class="swiper-slide">
+                    <img src="/img/ReviewPhoto/review3.JPEG" alt="">
+                </div>
+                <div class="swiper-slide">
+                    <img src="/img/ReviewPhoto/review4.JPEG" alt="">
+                </div>
+                <div class="swiper-slide">
+                    <img src="/img/ReviewPhoto/review5.JPG" alt="">
+                </div>
+                <div class="swiper-slide">
+                    <img src="/img/ReviewPhoto/review6.JPG" alt="">
+                </div>
+                <div class="swiper-slide">
+                    <img src="/img/ReviewPhoto/review7.JPG" alt="">
+                </div>
+                <div class="swiper-slide">
+                    <img src="/img/ReviewPhoto/review11.JPG" alt="">
+                </div>
+            </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-pagination"></div>
+        </div>
+    </div>
+</section>
+<section id='subscribe' class="subscribe">
     <div class="container">
         <div class="subscribe-main">
         <h3>STAY IN TOUCH</h3>
@@ -182,7 +219,7 @@
          </div>
     </div>
 </section>
-    <footer id='footer' class="footer">
+<footer id='footer' class="footer">
     <div class="container flex">
         <div class="footer-title">
             <div>
@@ -237,7 +274,7 @@
     </div>
 </footer>
 
-
+<script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
 <script src="/js/index.bundle.js"></script>
 </body>
 </html>
