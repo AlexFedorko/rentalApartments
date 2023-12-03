@@ -1,3 +1,4 @@
+const ip = require('ip');
 const gulp = require('gulp');
 
 // HTML
@@ -118,6 +119,7 @@ gulp.task('js:build', function () {
 const serverOptions = {
 	livereload: true,
 	open: true,
+	host: ip.address(),
 };
 
 gulp.task('server:build', function () {

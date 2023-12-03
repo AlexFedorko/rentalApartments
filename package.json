@@ -38,6 +38,8 @@
 	],
 	"dependencies": {
 		"@crossfox/css-start": "^1.0.11",
+		"@fancyapps/ui": "^5.0.28",
+		"ip": "^1.1.8",
 		"scss": "^0.2.4"
 	}
 }

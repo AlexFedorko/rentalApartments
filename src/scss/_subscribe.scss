@@ -9,26 +9,34 @@
 
 .subscribe-main h3 {
   color: #081F32;
-  font-family: Roboto;
+  font: 500 20rem Roboto,sans-serif;
   padding-bottom: 20rem;
-  font-size: 20px;
-  font-style: normal;
-  font-weight: 500;
   line-height: 1.5; /* 30px */
   letter-spacing: 2px;
   text-transform: uppercase;
   opacity: .8;
+  margin-top: 124rem;
+}
+
+@media (max-width: 920px) {
+  .subscribe-main h3 {
+    font: 500 18rem Roboto,sans-serif;
+  }
 }
 
 .subscribe-main h2 {
   color: #081F32;
   text-align: center;
-  font-family: Gelasio;
-  font-size: 32px;
-  font-style: normal;
-  font-weight: 500;
+  font: 500 32rem Gelasio, sans-serif;
   line-height: 1.4; /* 44.8px */
   padding-bottom: 50rem;
+}
+
+@media (max-width: 920px) {
+  .subscribe-main h2 {
+    font: 500 28rem Gelasio, sans-serif;
+    padding: 10rem;
+  }
 }
 
 .subscribe-main-input {
@@ -46,7 +54,7 @@
   border: 0;
   color: #081F32;
   text-align: center;
-  font-family: Poppins;
+  font-family: Poppins, sans-serif;
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
@@ -73,11 +81,27 @@
 
 }
 
+@media (max-width: 920px) {
+  .subscribe-main-icons {
+    display: grid;
+    grid-template-columns: repeat(3,2fr);
+    padding: 10rem;
+
+  }
+}
+
 .subscribe-main img {
   width: 60rem;
   height: 60rem;
   opacity: 0.5;
   transition: .7s;
+}
+
+@media (max-width: 920px) {
+  .subscribe-main img {
+    width: 45rem;
+    height: 45rem;
+  }
 }
 
 

@@ -5,19 +5,26 @@
 @import 'services';
 @import 'gallery';
 @import 'subscribe';
-@import 'reviews';
+@import 'photos';
 @import 'footer';
 
 html {
-  font-size: .058vw;
+  font-size: 0.058vw;
 }
+
+@media (max-width: 920px) {
+  html {
+    font-size: 0.29vw;
+  }
+}
+
 
 body {
   font-family: 'Roboto', sans-serif;
   font-size: 18rem;
 }
 
-.flex{
+.flex {
   display: flex;
 }
 
@@ -28,7 +35,7 @@ body {
 }
 
 .flex-col {
-  display:flex;
+  display: flex;
   height: 100vh;
   flex-direction: column;
   justify-content: space-between;
