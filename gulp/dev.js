@@ -1,3 +1,4 @@
+const ip = require('ip');
 const gulp = require('gulp');
 const fileInclude = require('gulp-file-include');
 const sass = require('gulp-sass')(require('sass'));
@@ -97,6 +98,7 @@ gulp.task('js:dev', function () {
 const serverOptions = {
 	livereload: true,
 	open: true,
+	host: ip.address()
 };
 
 gulp.task('server:dev', function () {

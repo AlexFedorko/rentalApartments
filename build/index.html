@@ -18,31 +18,38 @@
       <img class="nav-logo-icon" src="img/house-logo.svg" alt="menu-logo">
       </div>
       <nav class="nav">
-         <ul class="nav-menu">
+         <ul class="nav-menu menu">
             <li><a class="nav-menu-link" href="#">Головна</a></li>
             <li><a class="nav-menu-link" href="#about">Про Нас</a></li>
             <li><a class="nav-menu-link" href="#services">Послуги</a></li>
-            <li><a class="nav-menu-link" href="#gallery">Галерея</a></li>
+            <li><a class="nav-menu-link" href="#photos">Галерея</a></li>
             <li><a class="nav-menu-link" href="#footer">Контакти</a></li>
          </ul>
       </nav>
+      <button class='only-mobile' id="burger-btn" type="button"></button>
             <a class="btn mobile-btn" href="tel:+380667939448">Забронювати</a>
    </div>
 </header>
 
 <section id='main-subscection' class="main-subsection">
+
     <div class="container">
+
     <div class="main-title">
-        <h4>безпека</h4>
+        <h4>БЕЗПЕКА ТА ЗАТИШОК</h4>
         <h1>Залишайтеся з нами і відчувайте себе як <span>вдома</span>.</h1>
-        <p>Готелі, де дозволяється розміщення з домашніми тваринами, стають дедалі популярнішими серед мандрівників,
-            які не можуть розлучатися з домашніми улюбленцями.</p>
+        <p>Ласкаво просимо до нашого вишуканої оселі, де ваш комфорт та безпека - наш пріоритет.
+            На відміну від звичайних готелів, ми радимо вам не тільки залишитися з нами, але і відчувати себе, ніби ви вдома.</p>
         <a class="btn mobile-btn" href="#services">Детальніше</a>
     </div>
+
     </div>
+
 </section>
 <section id='about' class="about">
+
     <div class="container flex">
+
         <div class="about-info">
         <div class="about-player">
             <div class="about-player-background">
@@ -52,19 +59,26 @@
                 <img src="/img/about-block.jpg" alt="block">
             </div>
             <div class="about-player-main">
-                <img src="/img/about-player-main.jpg" alt="player">
-                <img id="openModalLinkVideo" class="player-btn" src="/img/about-player-btn.svg" alt="player button">
+                <iframe
+                        class="about-player-video"
+                        src="https://www.youtube.com/embed/VgXBOTR7Qaw?si=LZp770yMbwhH0WMF"
+                        title="YouTube video player"
+                        frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        allowfullscreen>
+                </iframe>
+<!--                <img id="openModalLinkVideo" class="player-btn" src="/img/about-player-btn.svg" alt="player button">-->
             </div>
         </div>
-
-        <!--        Right side of about section -->
         <div class="about-title">
             <h4>відпустка мрії</h4>
             <h2>Ваші особливі апартаменти, де кожен день — ваш особистий відпочинок.</h2>
             <a class="btn mobile-btn" href="#">Детальніше</a>
         </div>
         </div>
+
     </div>
+
 </section>
 <section id='services' class="services">
     <div class="container">
@@ -85,7 +99,7 @@
                 </div>
                 <div class="services-item">
                     <img src="/img/Responsibility.svg" alt="Responsibility">
-                    <h3>Безпека та конфіденційність</h3>
+                    <h3>Ваша конфіденційність</h3>
                     <p>Ми гарантуємо високий рівень безпеки та конфіденційності.</p>
                 </div>
                 <div class="services-item">
@@ -97,67 +111,7 @@
         </div>
     </div>
 </section>
-<section id='gallery' class='gallery'>
-    <div class="container">
-        <div class="gallery-main">
-            <div class="gallery-title">
-                <h3>Про Галерею</h3>
-                <p>Закінчуйте день затишно в наших апартаментах. Зелені насадження, приглушене освітлення — ідеальна атмосфера для вечірнього відпочинку.
-                </p>
-                <a class="btn mobile-btn" href="#photos">Переглянути</a>
-            </div>
-            <article class="gallery-item">
-                <img class="gallery-item-img" src="/img/lux-room.jpg" alt="lux room">
-                <div class="gallery-item-content">
-                    <div class="gallery-item-content-info">
-                        <h3>Lux Room</h3>
-                        <p>$15 ніч</p>
-                    </div>
-                        <a class='btn btn-sm' href="#">Book now</a>
-                </div>
-            </article>
-            <article class='gallery-item'>
-                <img class="gallery-item-img" src="/img/mini-room.jpg" alt="Mini room">
-                <div class="gallery-item-content">
-                    <div class="gallery-item-content-info">
-                    <h3>Mini Room</h3>
-                    <p>$15 ніч</p>
-                    </div>
-                    <a class='btn btn-sm' href="#">Book now</a>
-            </article>
-            <article class='gallery-item'>
-                <img class="gallery-item-img" src="/img/stande-room.jpg" alt="Stande room">
-                <div class="gallery-item-content">
-                    <div class="gallery-item-content-info">
-                    <h3>Stande Room</h3>
-                    <p>$15 ніч</p>
-                    </div>
-                    <a class='btn btn-sm' href="#">Book now</a>
-                </div>
-            </article>
-            <article class='gallery-item'>
-                <img class="gallery-item-img" src="/img/single-room.jpg" alt="Single room">
-                <div class="gallery-item-content">
-                    <div class="gallery-item-content-info">
-                    <h3>Single Room</h3>
-                    <p>$15 ніч</p>
-                    </div>
-                    <a class='btn btn-sm' href="#">Book now</a>
-                </div>
-            </article>
-            <article class='gallery-item'>
-                <img class="gallery-item-img" src="/img/elite-room.jpg" alt="Elite room">
-                <div class="gallery-item-content">
-                    <div class="gallery-item-content-info">
-                    <h3>Elite Room</h3>
-                    <p>$15 ніч</p>
-                    </div>
-                    <a class='btn btn-sm' href="#">Book now</a>
-                </div>
-            </article>
-        </div>
-    </div>
-</section>
+
 <section id="photos">
     <div class="container">
         <div class="grid-container">
@@ -270,7 +224,12 @@
                     </a>
                 </div>
             </div>
+            <div class="footer-call only-mobile">
+                <p class="footer-call-info">+380 66 793 9448</p>
+                <a class="btn footer-call-btn" href="tel:+380667939448">Забронювати</a>
+            </div>
         </div>
+
     </div>
 </footer>
 

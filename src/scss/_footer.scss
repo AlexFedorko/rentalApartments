@@ -121,6 +121,31 @@ h3 {
 .footer-title-links-call img {
   width: 25rem;
   height: 25rem;
+
+}
+
+.footer-call {
+  width: 100%;
+  min-height: 60rem;
+  display: flex;
+  align-items: center;
+  position: fixed;
+  z-index: 20;
+  bottom: 0;
+  right: .1%;
+  gap: 50rem;
+  backdrop-filter: blur(10rem); /* Adjust the blur radius as needed */
+}
+
+.footer-call-info {
+  font-size: 15rem;
+  padding-left: 30rem;
+  font-family: Gelasio, sans-serif;
+}
+
+.footer-call-btn {
+  font-size: 12rem;
+
 }
 
 

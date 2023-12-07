@@ -21,6 +21,7 @@
 @media (max-width: 920px) {
   .subscribe-main h3 {
     font: 500 18rem Roboto,sans-serif;
+    margin-top: 50rem;
   }
 }
 
@@ -78,7 +79,6 @@
   gap: 50rem;
   margin-top: 50rem;
   margin-bottom: 124rem;
-
 }
 
 @media (max-width: 920px) {
@@ -86,7 +86,7 @@
     display: grid;
     grid-template-columns: repeat(3,2fr);
     padding: 10rem;
-
+    margin-bottom: 50rem;
   }
 }
 

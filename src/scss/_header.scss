@@ -6,6 +6,7 @@
   position: fixed;
   top: 3.5%;
   left: 0;
+  transition: background 0.5s;
 }
 
 @media (max-width: 920px) {
@@ -14,9 +15,28 @@
   }
 }
 
+@media (max-width: 920px) {
+  .menu {
+  position: fixed;
+  z-index: 19;
+  top: 0;
+  backdrop-filter: blur(10rem);
+  flex-direction: column;
+  width: 100%;
+  min-height: 100vh;
+  align-items: flex-start;
+  left: 0;
+  padding: 30rem 40rem;
+  text-align: left;
+  gap: 41rem;
+  transition: 0.4s;
+  transform: translateX(101%);
+  }
+}
+
 .nav-logo-icon {
   width: 140rem;
-  height: 80rem;
+  height: 60rem;
   max-width: 144rem;
   color: $text-color-1;
   font: 500 24rem Gelasio, sans-serif;
@@ -40,7 +60,7 @@
 
 @media (max-width: 920px) {
   .nav-menu {
-    display: none;
+    margin: 0;
   }
 }
 
@@ -87,15 +107,44 @@ li {
   }
 }
 
-.header-scrolled {
-  background: rgba(255, 255, 255, 0.9); /* Adjust the alpha value for the desired blur effect */
-  backdrop-filter: blur(10rem); /* Adjust the blur radius as needed */
-  transition: background 0.5s;
-  position: fixed;
-  top: 0;
-  width: 100%;
-  z-index: 1000;
-  padding-bot: 20rem;
-  min-height: 5rem;
+body.header-scrolled .header {
+   background: rgba(255, 255, 255, 0.9); /* Adjust the alpha value for the desired blur effect */
+   backdrop-filter: blur(10rem); /* Adjust the blur radius as needed */
+   transition: background 0.5s;
+   position: fixed;
+   top: 0;
+   width: 100%;
+   z-index: 1000;
+   min-height: 5rem;
+  box-shadow: 0 1rem 2rem rgba(0,0,0,.1);
+ }
+
+#burger-btn {
+  position: relative;
+  z-index: 25;
+  background: transparent;
+  color: black;
+  border: 0;
+  font-size: 25rem;
+  padding: 10rem 10rem;
+
+  &::after {
+    content: '☰';
+  }
+}
+
+body.menu-active {
+  .header {
+    position: sticky;
+    top: 0;
+
+    .menu {
+      transform: translateX(0);
+    }
+  }
+
+  #burger-btn::after {
+    content: '✖';
+  }
 }
 

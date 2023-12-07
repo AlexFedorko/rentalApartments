@@ -18,6 +18,11 @@ html {
   }
 }
 
+@media (min-width: 981px) {
+  .only-mobile {
+    display: none;
+  }
+}
 
 body {
   font-family: 'Roboto', sans-serif;
