@@ -7,6 +7,7 @@
   top: 3.5%;
   left: 0;
   transition: background 0.5s;
+  z-index: 99;
 }
 
 @media (max-width: 920px) {
@@ -15,24 +16,6 @@
   }
 }
 
-@media (max-width: 920px) {
-  .menu {
-  position: fixed;
-  z-index: 19;
-  top: 0;
-  backdrop-filter: blur(10rem);
-  flex-direction: column;
-  width: 100%;
-  min-height: 100vh;
-  align-items: flex-start;
-  left: 0;
-  padding: 30rem 40rem;
-  text-align: left;
-  gap: 41rem;
-  transition: 0.4s;
-  transform: translateX(101%);
-  }
-}
 
 .nav-logo-icon {
   width: 140rem;
@@ -107,21 +90,46 @@ li {
   }
 }
 
-body.header-scrolled .header {
-   background: rgba(255, 255, 255, 0.9); /* Adjust the alpha value for the desired blur effect */
-   backdrop-filter: blur(10rem); /* Adjust the blur radius as needed */
-   transition: background 0.5s;
-   position: fixed;
-   top: 0;
-   width: 100%;
-   z-index: 1000;
-   min-height: 5rem;
-  box-shadow: 0 1rem 2rem rgba(0,0,0,.1);
- }
+body.header-scrolled:not(.menu-active) .header {
+  background: rgba(255, 255, 255, 0.95); /* Adjust the alpha value for the desired blur effect */
+  backdrop-filter: blur(10rem); /* Adjust the blur radius as needed */
+  transition: background 0.5s;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+  min-height: 5rem;
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, .1);
+}
+
+body.menu-active * {
+  opacity: 1 !important;
+}
+
+// Burger menu
+
+@media (max-width: 920px) {
+  .menu {
+    position: fixed;
+    z-index: 99;
+    top: 0;
+    backdrop-filter: blur(10rem);
+    flex-direction: column;
+    width: 100%;
+    min-height: 100vh;
+    left: 0;
+    padding: 50rem;
+    text-align: left;
+    gap: 41rem;
+    transition: 0.4s;
+    transform: translateX(-101%);
+  }
+}
+
 
 #burger-btn {
   position: relative;
-  z-index: 25;
+  z-index: 9999;
   background: transparent;
   color: black;
   border: 0;
@@ -134,17 +142,14 @@ body.header-scrolled .header {
 }
 
 body.menu-active {
-  .header {
-    position: sticky;
-    top: 0;
 
-    .menu {
-      transform: translateX(0);
-    }
+  .menu {
+    transform: translateX(0);
   }
 
   #burger-btn::after {
     content: '✖';
+
   }
 }
 

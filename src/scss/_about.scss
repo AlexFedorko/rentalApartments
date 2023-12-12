@@ -34,10 +34,11 @@
 
 @media (max-width: 920px) {
   .about-player {
-    display: none;
     width: 100%;
     margin: 0;
     justify-content: center;
+    padding: 0;
+    z-index: 30;
   }
 }
 
@@ -89,8 +90,9 @@
   display: flex;
   position: absolute;
   z-index: 5;
-  width: 630px;
-  height: 325px;
+  width: 100%;
+  max-width: 630rem;
+  height: 325rem;
   flex-shrink: 0;
 }
 

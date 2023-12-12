@@ -43,20 +43,18 @@
 
 
 .main-title h1 {
-  width: 500rem;
+  width: 100%;
+  max-width: 500rem;
   color: $text-color-1;
   padding-bottom: 25rem;
-  font: 600 54rem Gelasio, sans-serif;
-  line-height: 1.2;
-}
+  font: 600 54rem/1.2 Gelasio, sans-serif;
 
-@media (max-width: 920px) {
-  .main-title h1 {
-    width: 100%;
-    font: 600 33rem Gelasio, sans-serif;
-    line-height: .9;
+  @media (max-width: 920px) {
+    font-size: 33rem;
+    line-height: 1;
   }
 }
+
 
 .main-title h1 span {
   color: #1B75BB;

@@ -37,6 +37,7 @@
   padding: 10rem;
 }
 
+
 @media (max-width: 920px) {
   .grid-container {
     grid-template-columns: repeat(1,2fr);
@@ -50,7 +51,6 @@
   padding: 10rem;
   box-sizing: border-box;
 }
-
 
 .grid-item img a {
   width: 100%;
