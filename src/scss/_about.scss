@@ -3,11 +3,8 @@
 .about {
   width: 100%;
   min-height: 662rem;
-}
 
-@media (max-width: 920px) {
-  .about {
-    width: 100%;
+  @media (max-width: 920px) {
     min-height: auto;
   }
 }
@@ -19,6 +16,7 @@
     align-items: center;
   }
 }
+
 .about-player {
   width: 100%;
   max-width: 765px;
@@ -101,7 +99,7 @@
   z-index: 6;
   left: 50%;
   top: 50%;
-  transform: translate(-50%,-50%);
+  transform: translate(-50%, -50%);
 }
 
 #openModalLink {
@@ -111,28 +109,24 @@
 .about-title {
   padding-top: 240rem;
   padding-left: 140rem;
-}
 
-@media (max-width: 920px) {
-  .about-title {
+  @media (max-width: 920px) {
     width: 100%;
-    padding: 50rem 5rem;
+    padding: 5rem 5rem;
   }
 }
 
 .about-title h4 {
   color: #1B75BB;
-  font: 500 20rem Robot,sans-serif;
+  font: 500 20rem Robot, sans-serif;
   padding-bottom: 15rem;
   line-height: 150%; /* 30px */
   letter-spacing: 2rem;
   text-transform: uppercase;
   opacity: .8;
-}
 
-@media (max-width: 920px) {
-  .about-title h4 {
-    font: 500 18rem Robot,sans-serif;
+  @media (max-width: 920px) {
+    font-size: 18rem;
     padding: 10rem;
     text-align: center;
   }
@@ -142,19 +136,18 @@
   width: 436rem;
   color: $text-color-1;
   padding-bottom: 30rem;
-  /* Heading / Base */
   font: 500 33rem Gelasio, sans-serif;
   line-height: 1.25; /* 44.8px */
+
+  @media (max-width: 920px) {
+      width: 100%;
+      font: 500 19rem Robot, sans-serif;
+      padding: 10rem;
+      text-align: center;
+    }
 }
 
-@media (max-width: 920px) {
-  .about-title h2 {
-    width: 100%;
-    font: 500 19rem Robot,sans-serif;
-    padding: 10rem;
-    text-align: center;
-  }
-}
+
 
 
 

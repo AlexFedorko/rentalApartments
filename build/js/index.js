@@ -8,8 +8,6 @@ window.addEventListener('scroll', () => {
     d.body.classList[action]('header-scrolled');
 });
 
-
-
 // Burger menu navigation
 
 const btnBurgerMenu = document.getElementById('burger-btn');
@@ -29,18 +27,6 @@ if (btnBurgerMenu) {
     })
 }
 
-window.addEventListener('load', () => {
-    new Swiper(".mySwiper", {
-        pagination: {
-            el: ".swiper-pagination",
-            type: "progressbar",
-        },
-        navigation: {
-            nextEl: ".swiper-button-next",
-            prevEl: ".swiper-button-prev",
-        },
-    });
-})
 
 
 

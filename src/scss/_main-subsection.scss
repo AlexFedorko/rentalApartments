@@ -2,25 +2,15 @@
 
 .main-subsection {
   background: url('../img/main-background-light.jpg') center/cover;
-  //background-attachment: fixed;
   width: 100%;
   min-height: 690rem;
   margin-top: 0;
 }
 
-@media (max-width: 920px) {
-  .main-subsection {
-    //min-height: 100%;
-    width: 100%;
-  }
-}
-
 .main-title {
   padding-top: 214rem;
-}
 
-@media (max-width: 920px) {
-  .main-title {
+  @media (max-width: 920px) {
     padding: 130rem 15rem 10rem;
   }
 }
@@ -33,11 +23,9 @@
   letter-spacing: 2rem;
   text-transform: uppercase;
   opacity: 0.8;
-}
 
-@media (max-width: 920px) {
-  .main-title h4 {
-    font: 500 18rem Roboto, sans-serif;
+  @media (max-width: 920px) {
+    font-size: 18rem;
   }
 }
 
@@ -65,7 +53,7 @@
 @media (max-width: 920px) {
   .main-title h1 span {
     width: 100%;
-    font: 600 33rem Gelasio, sans-serif;
+    font-size: 33rem;
     line-height: .9;
   }
 }
